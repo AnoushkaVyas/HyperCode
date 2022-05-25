@@ -14,20 +14,16 @@ pip install graphzoo
 
 ```
 python main.py \
-    --data_name 'amazon_s' \
-    --data_path 'data' \
-    --outdir 'output/amazon_s' \
-    --pretrained_embeddings 'data/amazon_s/amazon_s.emd' \
-    --n_epochs 10 \
-    --n_layers 4 \
-    --n_heads 4 \
-    --gcn_option 'no_gcn' \
-    --node_edge_composition_func 'mult' \
-    --ft_input_option 'last4_cat' \
-    --path_option 'shortest' \
-    --ft_n_epochs 10 \
-    --num_walks_per_node 1 \
-    --max_length 6 \
-    --walk_type 'dfs' \
-    --is_pre_trained
+    --output_dir 'saved_models/pretrain/' \
+    --train_batch_size 5 \
+    --eval_batch_size 5 \
+    --test_batch_size 5 \
+    --learning_rate 1e-4 \
+    --weight_decay 0.0005 \
+    --adam_epsilon 1e-8 \
+    --num_train_epochs 100 \
+    --validate_every 5 \
+    --seed 42
  ```
+ 
+ 
