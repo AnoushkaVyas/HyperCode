@@ -1,12 +1,13 @@
 # HyperCode
 
-In this project, we are going to use hyperbolic graph models to encode ASTs to increase the performance of models like CodeT5 in the tasks of code understanding and generation. Our algorithm, referred as HyperCode, provides an end-to-end learning of a graph model and a language model for the code matching task. The report of the project is given here [link](https://github.com/AnoushkaVyas/HyperCode/blob/main/HyperCode.pdf).
+In this project, we are going to use hyperbolic graph models to encode ASTs to increase the performance of models like CodeT5 in the tasks of code understanding and generation. Our algorithm, referred as HyperCode, provides an end-to-end learning of a graph model and a language model for the code matching task. The report of the project is given here [link](https://github.com/AnoushkaVyas/HyperCode/blob/main/HyperCode.pdf). The project also uses the library [GraphZoo](https://github.com/AnoushkaVyas/GraphZoo).
 
 ## Installation
 
 ```
 conda conda env create -f hypercode.yml
 conda activate hypercode
+pip install graphzoo
 ```
 
 ## Training
