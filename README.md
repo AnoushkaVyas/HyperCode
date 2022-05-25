@@ -5,7 +5,6 @@ In this project, we are going to use hyperbolic graph models to encode ASTs to i
 ## Installation
 
 ```
-conda create -n slice python=3.6
-conda activate slice
-pip install -r requirements.txt
+conda conda env create -f hypercode.yml
+conda activate hypercode
 ```
